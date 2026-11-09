@@ -1,4 +1,5 @@
 build/
+build-tsan/
 cmake-build-*/
 *.o
 *.a

@@ -72,6 +72,7 @@ if(BUILD_TESTING)
     # Test executable
     add_executable(unit_tests
         tests/calculator_test.cpp
+        tests/lru_cache_test.cpp
     )
 
     target_include_directories(unit_tests PRIVATE
@@ -80,6 +81,7 @@ if(BUILD_TESTING)
 
     target_link_libraries(unit_tests PRIVATE
         GTest::gtest_main
+        Threads::Threads
     )
 
     # Compiler warnings for tests
